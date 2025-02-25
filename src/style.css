@@ -1,7 +1,12 @@
+:root {
+  --blue-color: rgba(0, 172, 220, 1);
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 500;
   box-sizing: border-box;
 }
 
@@ -26,7 +31,6 @@ header {
 
 .nav {
   height: 60px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +70,7 @@ header {
   align-items: center;
   text-align: center;
   font-size: 0.75rem;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .nav-item:first-child {
@@ -94,12 +98,12 @@ a.is-active {
   transform: translateX(-50%);
   width: 80%;
   height: 4px;
-  background-color: rgba(0, 172, 220, 1);
+  background-color: var(--blue-color);
   border-radius: 8px;
 }
 
 [data-qa='hover']:hover {
-  color: rgba(0, 172, 220, 1);
+  color: var(--blue-color);
 }
 
 @media (max-width: 1026px) {
